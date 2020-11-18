@@ -36,6 +36,8 @@ body > header {
 #search-button {
     background-color: rgb(255, 72, 0);
     color: white;
+    padding: 3px;
+    border-radius: 15%;
 }
 
 #popular-destinations {
@@ -63,6 +65,7 @@ body > header {
 #customer-reviews {
     background-color: rgb(61, 78, 110);
     color: white;
+
 }
 
 #user-image {
@@ -74,6 +77,14 @@ body > header {
 }
 
 footer {
+    text-indent: 10px;
     background-color: rgb(20, 18, 39);
     color: white;
+    display: grid;
+    grid-template-areas: 
+        "h2 li h4""
+        "li h4"
+        "h4"
+        "h4";
+    grid-template-columns: 3fr 3fr 3fr;
 }
