@@ -1,9 +1,25 @@
+
+<!-- In this lab you will create the HTML structure and  styling for the following travel web page.
+
+The page will have
+- Header with navigation
+- Grid of favourite/top places
+- A form to find travel details
+- A grid showing popular countries to visit
+- A grid showing popular places to visit in certain countries.
+- Testimonials from users
+- Footer showing some company details. -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
     <title>CC Travel</title>
 </head>
 <body>
@@ -42,8 +58,8 @@
   <section id= where-do-you-want-to-go>
     <form action="">
       <h3>Where do you want to go?</h3>
-    <input type="text" name="Where do you want to go?">
-    <input type="date">
+          <input type="text" name="Where to go?" id="where-to-go"placeholder="Where to go?">
+          <input type="date" id= "date">
           <select name="Travel type" id="travel-type">
             <option value="">Select option</option>
             <option value="Beach bum">Family fun</option>
@@ -78,7 +94,6 @@
         <a href="/maldives">
             <img class="image" alt="maldives" src="https://images.unsplash.com/photo-1601121664412-d3dc06877523?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"/>
         </a>
-
         <a href="/indonesia">
             <img class="image" alt="indonesia" src="https://images.unsplash.com/photo-1527965408463-82ae0731825c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
         </a>
@@ -88,7 +103,6 @@
   <section id=popular-places>
       <h1>Popular Places</h1>
       <h4>Some of the most popular places to visit</h4>
-
         <nav>
             <a href="/italy">
                 <img class="image" alt="italy" src="https://images.unsplash.com/photo-1599173687303-7e1eb50f1e60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"/>
@@ -113,15 +127,17 @@
 
   <!-- customer reviews -->
   <section id=customer-reviews>
-    <img class="user-image" src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"/>
-    <img class= "user-image" src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"/>
-    <img class= "user-image" src="https://images.unsplash.com/photo-1588453383063-37ea0b78f30f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"/>
-    <h4>"Happiest place in the world</h4>
-    <h4>"Incredible holiday and unbeatable experience"</h4>
+    <img src="https://images.unsplash.com/photo-1562124638-724e13052daf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"/>
+    <img src="https://images.unsplash.com/photo-1590616023780-dfff93062e98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"/>
+    <img src="https://images.unsplash.com/photo-1592448195128-560ae08e7a76?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"/>
+    <h4>"Happiest place in the world"</h4>
+    <h4>"The holiday of a lifetime"</h4>
     <h4>"An experience everyone deserves"</h4>
-    <h6>Oli Saunders</h6>
-    <h6>Cassia Briscoe</h6>
-    <h6>Kia Tansley</h6>
+    <!-- <ul> 
+        <li>Oli Saunders</li>
+        <li>Cassia Briscoe</li>
+        <li>Kia Tansley</li>
+    </ul> -->
   </section>
 
 <!-- footer  -->
